@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Dariel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Portofolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <!-- TANPA ms-auto biar tetap di kiri -->
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projek">My Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">My Contact</a>
+          </li>
+          
+        </ul>
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- END -->
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="row text-center d-flex align-items-center">
+      <div class="col-md-4">
+        <img src="asset/img/daril.jpeg" class="img-thumbnail" alt="Dariel"
+          style="width: 60%; display: flex; justify-self: center;">
+      </div>
+      <div class="col-md-4 justify-content-center">
+        <h1>Dariel Rafa Pratama</h1>
+        <p>Nama saya Dariel Rafa Pratama. Umur saya <strong>16</strong> tahun. Saya lahir di
+          <strong>Semarang</strong>. Saya sedang mempelajari bidang keahlian <strong>programming
+            website</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- END -->
+
+  <!-- Projek -->
+  <section class="projek" id="projek">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col mt-4">
+          <h3 class="aboutt">My Project</h3>
+
+        </div>
+      </div>
+
+      <!-- Carousel Projek -->
+      <div id="projekCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="https://www.androidauthority.com/wp-content/uploads/2021/05/Rocket-Player-screenshot-2022.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+
+                <h5 class="card-title">Projek 1</h5>
+                <p class="card-text">Music Player.</p>
+                <a href="https://darielrafa.github.io/MusicPlayer/" class="btn btn-primary" >Go link</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="https://www.androidauthority.com/wp-content/uploads/2021/05/Rocket-Player-screenshot-2022.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Maaf Kak</h5>
+                <p class="card-text">Deskripsi projek 2.</p>
+
+                <a href="https://darielrafa.github.io/MusicPlayer/" class="btn btn-primary">Go link</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="card mx-auto" style="width: 18rem;">
+              <img src="https://www.androidauthority.com/wp-content/uploads/2021/05/Rocket-Player-screenshot-2022.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Projek 3</h5>
+
+                <p class="card-text">Deskripsi projek 3.</p>
+                <a href="https://darielrafa.github.io/MusicPlayer/" class="btn btn-primary">Go link</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+        <!-- Tombol navigasi -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#projekCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#projekCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+  <!-- END -->
+
+  <!-- CONTACT -->
+  <section class="kontak" id="kontak">
+    <div class="row text-center">
+      <div class="col mt-5">
+        <h3>Contact Me</h3>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-5 mb-4">
+      <div class="col-md-6">
+        <div class="contact-box">
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput2" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Name">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+
+          </div>
+          <div class="text-center mt-3">
+            <button type="button" class="btn btn-primary">Send</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
